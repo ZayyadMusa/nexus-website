@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEXUS — Empowering Youth, Transforming Society</title>
+  <meta name="description" content="NEXUS Youth Initiative for Social Transformations. We inspire, empower, and mobilise young people as catalysts for positive social change." />
+  <link rel="icon" type="image/png" href="/images/logo.png" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+
+  <!-- ════════ NAVIGATION ════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="/" class="navbar__brand" id="nav-brand">
+        <img src="/images/logo.png" alt="NEXUS Logo" />
+        <span>NEXUS</span>
+      </a>
+      <div class="navbar__links" id="nav-links">
+        <a href="/" class="navbar__link active" id="nav-home">Home</a>
+        <a href="/about.html" class="navbar__link" id="nav-about">About Us</a>
+        <a href="/mission.html" class="navbar__link" id="nav-mission">Our Mission</a>
+        <a href="#contact" class="navbar__link" id="nav-contact">Contact</a>
+      </div>
+      <button class="navbar__toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ════════ HERO ════════ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <img src="/images/hero-home.png" alt="Youth leadership summit in Abuja" />
+    </div>
+    <div class="hero__content">
+      <span class="hero__badge animate-in">Empowering Youth, Transforming Society</span>
+      <h1 class="hero__title animate-in">Empowering Youth,<br>Transforming Society</h1>
+      <p class="hero__description animate-in">
+        We inspire, empower, and mobilise young people as catalysts for
+        positive social change — through leadership development, civic
+        engagement, education, entrepreneurship, and sustainable
+        community initiatives. Together, we are reshaping the foundation of
+        our society.
+      </p>
+    </div>
+  </section>
+
+  <!-- ════════ STAND WITH US ════════ -->
+  <section class="stand-section section" id="stand-with-us">
+    <div class="container">
+      <div class="stand-section__icon animate-in">👥</div>
+      <h2 class="stand-section__title animate-in">Stand With Us</h2>
+      <p class="stand-section__text animate-in">
+        Real change is led by young people. By standing with NEXUS, you join a movement of
+        empowered, socially conscious youth working to promote justice, inclusion, and meaningful
+        contribution to national and global development. Your voice matters.
+      </p>
+    </div>
+  </section>
+
+  <div class="gallery-strip" id="gallery">
+    <div class="gallery-strip__item animate-in">
+      <img src="/images/gallery-1.png" alt="Youth civic education workshop" />
+    </div>
+    <div class="gallery-strip__item animate-in">
+      <img src="/images/gallery-2.png" alt="Community building project" />
+    </div>
+    <div class="gallery-strip__item animate-in">
+      <img src="/images/gallery-3.png" alt="Community networking event" />
+    </div>
+    <div class="gallery-strip__item animate-in">
+      <img src="/images/gallery-4.png" alt="Youth innovation hub" />
+    </div>
+  </div>
+
+  <!-- ════════ CONTACT & NEWSLETTER ════════ -->
+  <section class="contact-section section" id="contact">
+    <div class="container">
+      <div class="contact-section__header animate-in">
+        <h2 class="contact-section__title">Contact & Stay Connected</h2>
+        <p class="contact-section__subtitle">Reach out to us or join our mailing list for the latest updates.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Map -->
+        <div class="contact-map animate-in" id="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.1!2d7.42!3d9.06!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwMDMnMzYuMCJOIDfCsDI1JzEyLjAiRQ!5e0!3m2!1sen!2sng!4v1700000000000"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="NEXUS Head Office Location"
+          ></iframe>
+          <div class="contact-map__overlay">
+            <div style="font-size: 24px; margin-bottom: 8px;">📍</div>
+            <h3>Head Office</h3>
+            <p>883 Olu Awetesu Street, Jabi, Abuja</p>
+            <div class="contact-links">
+              <a href="tel:08037813287">📞 08037813287, 08038267136</a>
+              <a href="mailto:info@nexusyouth.org">✉️ info@nexusyouth.org</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Newsletter Form -->
+        <div class="newsletter-card animate-in" id="newsletter-form">
+          <div style="font-size: 24px; margin-bottom: 12px; color: var(--color-secondary);">✦</div>
+          <h3 class="newsletter-card__title">Join the Movement</h3>
+          <p class="newsletter-card__subtitle">
+            Become part of NEXUS. Sign up to receive our newsletter, event
+            invites, and ways to get involved — straight to your inbox.
+          </p>
+
+          <form id="join-form" onsubmit="return false;">
+            <div class="form-group">
+              <label for="full-name">Full Name</label>
+              <div class="form-input-wrapper">
+                <span class="input-icon">👤</span>
+                <input type="text" class="form-input" id="full-name" name="fullName" placeholder="Jane Doe" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <div class="form-input-wrapper">
+                <span class="input-icon">✉️</span>
+                <input type="email" class="form-input" id="email" name="email" placeholder="jane@example.com" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <div class="form-input-wrapper">
+                <span class="input-icon">📞</span>
+                <input type="tel" class="form-input" id="phone" name="phone" placeholder="080..." />
+              </div>
+              <p class="form-helper">For event reminders and WhatsApp updates</p>
+            </div>
+
+            <div class="form-checkbox">
+              <input type="checkbox" id="subscribe" name="subscribe" />
+              <label for="subscribe">Yes, I'd like to receive newsletters and updates from NEXUS.</label>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full" id="join-btn">
+              Join Now <span>→</span>
+            </button>
+
+            <p class="form-note">We respect your privacy. Unsubscribe anytime.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ FOOTER ════════ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="footer__brand-logo">
+            <img src="/images/logo.png" alt="NEXUS Logo" />
+          </div>
+          <p class="footer__brand-tagline">Empowering Youth, Transforming Society</p>
+        </div>
+        <div class="footer__links-col">
+          <a href="#contact" class="footer__link">Contact Us</a>
+          <a href="#" class="footer__link">Volunteer</a>
+          <a href="#" class="footer__link">Donate</a>
+        </div>
+        <div class="footer__links-col">
+          <a href="#" class="footer__link">Privacy Policy</a>
+          <a href="#" class="footer__link">Terms of Service</a>
+          <a href="#" class="footer__link">Press Kit</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        © 2026 Nexus. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
